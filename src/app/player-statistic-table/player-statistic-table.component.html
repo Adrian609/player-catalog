@@ -1,7 +1,8 @@
 <ag-grid-angular
+  #agGrid
   style="width: 100%; height: 100%"
   class="ag-theme-alpine-dark"
-  [rowData]="rowData"
+  [rowData]="rowData | async"
   [columnDefs]="columnDefs"
   [defaultColDef]="defaultColDef"
   [paginationAutoPageSize]="true"

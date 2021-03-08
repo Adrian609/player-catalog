@@ -1,11 +1,11 @@
-@import "../node_modules/ag-grid-community/dist/styles/ag-grid.min.css";
-@import "../node_modules/ag-grid-community/dist/styles/ag-theme-alpine-dark.min.css";
-@import "../node_modules/bootstrap/scss/bootstrap";
+// @import "../node_modules/ag-grid-community/dist/styles/ag-grid.min.css";
+// @import "../node_modules/ag-grid-community/dist/styles/ag-theme-alpine-dark.min.css";
 
 body{
   background-color: black;
 
 }
+
 main{
   height:900px;
 }
@@ -18,8 +18,3 @@ main{
 .ag-column-hover {
   background-color: #2eb7f721;
 }
-
-
-
-
-
