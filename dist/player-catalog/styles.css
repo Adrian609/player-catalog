@@ -1,0 +1,18 @@
+body {
+  background-color: black;
+}
+
+main {
+  height: 900px;
+}
+
+.ag-row-hover {
+  /* putting in !important so it overrides the theme's styling as it hovers the row also */
+  background-color: #2eb7f721 !important;
+}
+
+.ag-column-hover {
+  background-color: #2eb7f721;
+}
+
+/*# sourceMappingURL=styles.css.map*/
