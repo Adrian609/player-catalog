@@ -11,7 +11,7 @@ import { NodeWithI18n } from '@angular/compiler';
 export class PlayerStatisticTableComponent {
   private gridApi: any;
   private gridColumnApi: any;
-  private battingStatsData = '../assets/Data/BattingStats.json';
+  private battingStatsData = 'https://raw.githubusercontent.com/Adrian609/player-catalog/gh-pages/assets/Data/BattingStats.json';
   rowData: any;
   columnDefs = [
     {
