@@ -1,8 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { AgGridAngular } from 'ag-grid-angular';
-import { NodeWithI18n } from '@angular/compiler';
-
 @Component({
   selector: 'app-player-statistic-table',
   templateUrl: './player-statistic-table.component.html',
@@ -11,7 +8,7 @@ import { NodeWithI18n } from '@angular/compiler';
 export class PlayerStatisticTableComponent {
   private gridApi: any;
   private gridColumnApi: any;
-  private battingStatsData = '../assets/Data/BattingStats.json';
+  private battingStatsData = 'https://raw.githubusercontent.com/Adrian609/player-catalog/main/src/assets/Data/BattingStats.json';
   rowData: any;
   columnDefs = [
     {
@@ -68,7 +65,6 @@ export class PlayerStatisticTableComponent {
   onGridReady(params: { api: any; columnApi: any }): any {
     this.gridApi = params.api;
     this.gridColumnApi = params.columnApi;
-
     this.rowData = this.http.get(this.battingStatsData);
   }
 }
